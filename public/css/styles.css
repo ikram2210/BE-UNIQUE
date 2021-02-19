@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+
+
+
+
+
+body, html {
+    height: 100%;
+    background-color: white;;
+}
+
+footer {
+    /* background-color: #c0eeff; */
+    width:100%;
+    /*padding-top:50px;*/
+}
+
+header{
+    /* background-color:  #c0ddff; */
+}
+h1 {
+    font-family: Tangerine;
+    font-weight: bold;
+    font-size: 70px;
+
+    display: flex;
+     align-items: center;
+     justify-content: center;
+
+    }
+    ul{
+        font-family: Tangerine;
+        font-size: 30px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+                 
+    }
+body {  
+  
+    display: flex;
+        flex-direction: column;
+  
+    
+  
+}
+
+.image {
+
+    height: 250px;
+    width: 250px;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+
+}
+
+.entete{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.panier-compte{
+    display: flex;
+     align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+ 
+}
+.panier{
+    margin-top: 10px;
+}
+.le-footer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ 
+   
