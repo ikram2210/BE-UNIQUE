@@ -1,0 +1,12 @@
+
+
+.products-category{
+  
+display: flex;
+flex-direction : row;
+flex-wrap: row;
+align-content: center;
+
+
+
+}

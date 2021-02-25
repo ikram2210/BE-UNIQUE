@@ -8,12 +8,43 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Produit;
 
+
 class SiteController extends AbstractController
 {
+
+     /**
+     * @Route("/produit/{id}", name="produit")
+     */
+    public function detail(int $id): Response
+    {
+        
+        $produit = $this->getDoctrine()
+        ->getRepository(Produit::class)
+            ->find($id);
+
+            return $this->render('Site/detail.html.twig', [
+                'Produit' => $produit,
+              ]);
+    }
+
+
+    /**
+     *  @Route("/boutique", name="boutique")
+     */
+    public function getProduits(): Response
+
+    {
+        $produits = $this->getDoctrine()
+          ->getRepository(Produit::class)
+          ->findAll();
+          return $this->render('Site/boutique.html.twig', [
+            'produits' => $produits,
+          ]);
+    }
     /**
      * @Route("/produits", name="be-unique")
      */
-    public function index(Request $request): Response
+    public function produitCategorie(Request $request): Response
     
     {
         $category = $request->query->get("category");
@@ -23,11 +54,19 @@ class SiteController extends AbstractController
             ->findBy(
                 array("categorie"=> $category)
             );
-
-        return $this->render('Site/produits.html.twig', [
+return $this->render('Site/produits.html.twig', [
             'produits' => $produits,
+        
         ]);
     }
+     /**
+     * @Route("/apropos", name="apropos")
+     */
+    public function  Apropos(){
+        return $this->render('Site/apropos.html.twig');
+
+    }
+
 
     /**
      *  @Route("/", name="home")

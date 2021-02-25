@@ -1,5 +1,13 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %}
+         <link rel = "stylesheet" href= "{{ asset('css/compte.css') }}" >
+{% endblock %} 
 {% block body %}
-<h3>Bienvenue</h3>
-<p>hfkdslkgmqfds,xc,,dlfdgflfmf,v,</p>
+<div class = "seconnecter"
+<h3>Démarrer la session</h3>
+<p>Saisissez votre adresse e-mail et votre mot de passe</p>
+<form method ="post" action ="traitement.php">
+<P>
+<input type ="email"/>
+</p>
 {% endblock %}

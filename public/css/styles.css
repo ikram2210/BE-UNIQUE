@@ -11,10 +11,10 @@ body, html {
 }
 
 footer {
-    /* background-color: #c0eeff; */
-    width:100%;
-    /*padding-top:50px;*/
-}
+       
+        bottom:0;
+        width:100%;
+        }
 
 header{
     /* background-color:  #c0ddff; */

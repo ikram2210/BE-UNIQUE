@@ -1,0 +1,53 @@
+
+.compte{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+
+
+}
+
+.seconnecter{
+    /* margin-top: 100px; */
+    /* margin-left: 15%; */
+
+}
+
+
+.formulaire{
+    height: 30px;
+    width: 330px;
+    background-color: #C4C4C4;
+    border-color:  #C4C4C4 ;
+}
+
+
+
+
+.bouttoncompte{
+    height: 50px;
+    width: 340px;
+    background-color: black;
+    color: white;
+}
+footer{
+
+        
+        position:absolute;
+        
+        bottom:0;
+        
+        width:100%;
+        
+     
+        
+     }
+    .retour {
+        margin-left: 50px;
+        font-weight: bold;
+        width: 30px;
+        heigt : 100px;
+        background-color: red;
+    }

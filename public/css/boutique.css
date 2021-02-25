@@ -1,0 +1,14 @@
+.contenu-produit{
+  height: 400px;
+  width: 400px;
+  background-color: pink;
+
+  
+
+}
+.affichage-produit{
+  
+  flex-direction : row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

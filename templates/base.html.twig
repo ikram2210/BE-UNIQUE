@@ -3,17 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+		 rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         {# <link rel = "stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"> #}
         {% block stylesheets %}{% endblock %}
 
         <link rel = "stylesheet" href= "{{ asset('css/styles.css') }}" >
+		
 		
 
     </head>
 	    <body>
 	    	<header>
 			<div class = "entete">
-				<img class = "logo" src= "{{ asset('images/logos/logo1.png') }}" alt="logo" />
+				<a href="/"><img class = "logo" src= "{{ asset('images/logos/logo1.png') }}" alt="logo" /></a>
                 <h1>Be Unique</h1>
 				<div class ="panier-compte">
 				
@@ -27,8 +30,8 @@
 			  </div>
 			  
 			     <ul>
-					<li><a href="/A-propos">A propos</a></li>
-					<li><a href="/">Boutique</a></li>
+					<li><a href="/apropos">A propos</a></li>
+					<li><a href="/boutique">Boutique</a></li>
 					<li><a href= "/contact">Contact</a></li>
 			    </ul>
 
