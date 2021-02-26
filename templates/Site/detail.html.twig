@@ -1,9 +1,13 @@
 {% extends 'base.html.twig' %}
 {% block body %}
 
+<img class = "image" src="{{ asset('' ~ Produit.image ~ '') }}" height="100px" width="auto">
+  <h1>{{ Produit.nom}}</h1>
+{{ Produit.prix }}EURO
+{{ Produit.descriptif}}
 
-<h1>{{ Produit.nom}}</h1>
-{{ Produit.prix }}
+
+{# <img src ="{{ Produit.image }}" height="100px" width="auto"/> #}
 
 
 

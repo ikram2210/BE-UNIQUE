@@ -2,21 +2,20 @@
 {% extends 'base.html.twig' %}
 
  {% block stylesheets %}
-         <link rel = "stylesheet" href= "{{ asset('css/produits.css') }}" >
-
+    <link rel = "stylesheet" href= "{{ asset('css/produits.css') }}" >
  {% endblock %} 
 
-{% block body %}
-<div class = "products-category">
-
-{% for produit in produits %}
-<div class = "product">
-<a href = "/produit/{id}"><img class = "image" src="{{ asset('' ~ produit.image ~ '') }}" alt=""/></a>
-<h2>{{ produit.nom }}</h2>
-{{ produit.prix }} EURO
-</div>
-</div>
-{% endfor %}
+ {% block body %}
+   <div class = "products-category">
+   {% for produit in produits %}
+        <div class = "product">
+        <a href = "/produit/{{produit.id}}"><img class = "image" src="{{ asset('' ~ produit.image ~ '') }}"
+        alt=""/></a>
+        <h2>{{ produit.nom }}</h2>
+        {{ produit.prix }} EURO
+        </div>
+   </div>
+ {% endfor %}
 
 
 
