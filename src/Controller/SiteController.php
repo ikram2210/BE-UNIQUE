@@ -1,17 +1,15 @@
 <?php
 
 namespace App\Controller;
-
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Produit;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-
-
-
 
 class SiteController extends AbstractController
 {
@@ -30,7 +28,7 @@ class SiteController extends AbstractController
                 'Produit' => $produit,
               ]);
     }
-
+    
 
     /**
      *  @Route("/boutique", name="boutique")
@@ -63,6 +61,7 @@ return $this->render('Site/produits.html.twig', [
         
         ]);
     }
+
      /**
      * @Route("/apropos", name="apropos")
      */
@@ -80,7 +79,6 @@ return $this->render('Site/produits.html.twig', [
 
     }
 
-     
      /**
      *  @Route("/compte", name="compte")
      */
@@ -88,32 +86,7 @@ return $this->render('Site/produits.html.twig', [
         return $this->render('Site/compte.html.twig');
 
     }
-     /**
-     *  @Route("/panier", name="panier")
-     */
-    public function  panier()
-    {
-        return $this->render('Site/panier.html.twig');
 
-    }
+     
 
-     /**
-     *  @Route("/ikram", name="ikram")
-     */
-    public function  contact():Response
-    {
-        $form = $this->createFormBuilder(null, array(
-            'csrf_protection' => false,
-        ))
-            ->add('Prenom', TextType::class)
-            ->add('Nom', TextType::class)
-            ->add ('Message', TextareaType::class)
-            ->add('save', SubmitType::class, ['label' => 'envoyer formulaire'])
-            ->getForm()->createView();
-
-        return $this->render('Site/contact.html.twig',[
-             'form' => $form, 
-        ]);
-
-    }
 }

@@ -2,11 +2,27 @@
 
 .products-category{
   
-display: flex;
-flex-direction : row;
-flex-wrap: row;
-align-content: center;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    height: auto;
+    justify-content: center;
 
 
+
+}
+.product{
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 50px; 
+    border-radius: 50% 20% / 10% 40%;
+    /* background-color: gray; */
+
+  
+}
+.image_accessoire{
+    border-radius: 50% 20% / 10% 40%;
+   
 
 }

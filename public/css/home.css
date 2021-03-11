@@ -4,7 +4,7 @@ body{
   height: 100%;
 
 }
-#content1 {
+#content_category {
  margin-top: 50px;
   display: flex;
 
@@ -28,6 +28,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  
  
 
 }
@@ -36,7 +37,7 @@ body{
 .photo{
 
   width: 350px;
-  height: 250px;
+  height: 350px;
   border-radius: 20px;
 
 }
@@ -83,4 +84,27 @@ h3{
 
   font-style: normal;
 
+}
+@media screen and (max-width: 1280px)
+{
+  #content_category {
+    
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: space-around;
+
+   }
+   .photo{
+
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+  
+  }
+  .box {
+
+    margin-top: 30px;
+   
+  }
+  
 }

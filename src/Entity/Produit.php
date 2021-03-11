@@ -38,14 +38,15 @@ class Produit
     private $prix;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $quantity;
+    
+    private $image;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="integer")
      */
-    private $image;
+    private $Stock;
 
     public function getId(): ?int
     {
@@ -100,17 +101,7 @@ class Produit
         return $this;
     }
 
-    public function getQuantity(): ?int
-    {
-        return $this->quantity;
-    }
-
-    public function setQuantity(int $quantity): self
-    {
-        $this->quantity = $quantity;
-
-        return $this;
-    }
+   
 
     public function getImage(): ?string
     {
@@ -120,6 +111,18 @@ class Produit
     public function setImage(string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getStock(): ?int
+    {
+        return $this->Stock;
+    }
+
+    public function setStock(int $Stock): self
+    {
+        $this->Stock = $Stock;
 
         return $this;
     }

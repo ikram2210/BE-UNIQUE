@@ -1,18 +1,29 @@
 .apropos{
-    margin-top: 50px;
+  margin-top: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 70px;
+  margin-right: 70px;
 }
 footer {
    
     bottom:0;
     width:100%;
     }
-    .photo-apropos{
+    /* .photo-apropos{
 
-        width: 350px;
-        height: 500px;
+      height: 500px;
+      width: 500px;
+ 
+      } */
+      .apropos-image{
         border-radius: 20px;
-      
+        height: 500px;
+        width: 600px;
+      }
+      .texte{
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 25px;
       }
