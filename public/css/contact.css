@@ -1,3 +1,52 @@
 #contact_prenom{
-    
+    height: 30px;
+    width: 330px;
+    background-color: #CFCFC3;
+    border-color:   #CFCFC3 ;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+#contact_nom{
+    height: 30px;
+    width: 330px;
+    background-color:  #CFCFC3;
+    border-color:   #CFCFC3;
+    margin-bottom: 20px;
+    margin-left: 119px;
+}
+#contact_email{
+    height: 30px;
+    width: 330px;
+    background-color:  #CFCFC3;
+    border-color:   #CFCFC3 ;
+    margin-bottom: 20px;
+    margin-left: 116px;
+}
+#contact_message{
+    height: 100px;
+    width: 330px;
+    background-color:  #CFCFC3;
+    border-color:   #CFCFC3 ;
+    margin-bottom: 20px;
+    margin-left: 92px;
+
+}
+#contact_envoyer{
+    height: 40px;
+    width: 200px;
+    background-color:#7F0000;
+    color: white;
+    margin-left: 150px;
+    border-radius: 10px;
+    margin-right: ;
+   
+
+}
+.conteneur_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
 }

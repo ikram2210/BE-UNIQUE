@@ -1,13 +1,16 @@
 {% extends 'base.html.twig' %}
 {% block stylesheets %}
-         <link rel = "stylesheet" href= "{{ asset('css/boutique.css') }}" >
+         <link rel = "stylesheet" href= "{{ asset('css/contact.css') }}" >
 
  {% endblock %} 
-{% block stylesheets %}
-         <link rel = "stylesheet" href= "{{ asset('css/compte.css') }}" >
-{% endblock %} 
 {% block body %}
+ <div class = "conteneur_contact">
+ <div class = "infos_formulaire">
+ </div>
+ <div class = "formulaire_contact"
  {{ form(contactForm) }}
+ </div>
+ </div>
 
 {% endblock %}
 
