@@ -35,11 +35,11 @@
 #contact_envoyer{
     height: 40px;
     width: 200px;
-    background-color:#7F0000;
+    background-color:black;
     color: white;
     margin-left: 150px;
     border-radius: 10px;
-    margin-right: ;
+    justify-content: center;
    
 
 }
