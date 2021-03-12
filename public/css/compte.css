@@ -9,12 +9,6 @@
 
 }
 
-.seconnecter{
-    /* margin-top: 100px; */
-    /* margin-left: 15%; */
-
-}
-
 
 .formulaire{
     height: 30px;
@@ -51,6 +45,4 @@ footer{
         height : 100px;
         background-color: red;
     }
-    #contact{
-        
-    }
+    
