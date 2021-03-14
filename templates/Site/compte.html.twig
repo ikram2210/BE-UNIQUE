@@ -32,4 +32,17 @@
        value="Créer un compte">
        </div>
        </div>
+       <div class = "conexion">
+       <ul class "connexion_deconexion">
+       {% if not app.user %}
+       <li class= "nav-item">
+       <a href="{{ path('security_login')}}" class="nav-link">Connexion</a>
+       </li>
+        {% else %}
+       <li class= "nav-item">
+       <a href="{{ path('security_logout')}}" class="nav-link">deconnexion</a>
+       </li>
+       {% endif %}
+       </ul>
+       </div>
 {% endblock %}
