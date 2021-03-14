@@ -1,0 +1,42 @@
+.page_connexion{
+
+
+    margin:auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    height: 500px;
+    width: 700px;
+    background-color: #89B79E;
+    border-radius: 10px;
+    }
+    .form-group{
+        height: 30px;
+        width: 330px;
+        background-color:   #DCDCDC;
+        border-color:    #DCDCDC;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .form-group-button{
+
+        margin-bottom: 20px;
+        margin-top: 20px;
+   
+     
+    }
+    button{
+        width: 150px;
+    }
+    .formulaire_connexion{
+        display: block;
+        width: 160px;
+        float: left;
+       margin-left: 25%;
+       margin-right: 25%;
+    }
+    h4{
+    
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px ;
+    }

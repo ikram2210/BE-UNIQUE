@@ -1,35 +1,39 @@
+
+label{
+    display: block;
+	width: 100px;
+
+}
+
 #contact_prenom{
     height: 30px;
     width: 330px;
     background-color: #CFCFC3;
     border-color:   #CFCFC3 ;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-}
+
+ }
 #contact_nom{
     height: 30px;
     width: 330px;
     background-color:  #CFCFC3;
     border-color:   #CFCFC3;
-    margin-bottom: 20px;
-    margin-left: 119px;
+  
+ 
 }
 #contact_email{
     height: 30px;
     width: 330px;
     background-color:  #CFCFC3;
     border-color:   #CFCFC3 ;
-    margin-bottom: 20px;
-    margin-left: 116px;
+
+
 }
 #contact_message{
     height: 100px;
     width: 330px;
     background-color:  #CFCFC3;
     border-color:   #CFCFC3 ;
-    margin-bottom: 20px;
-    margin-left: 92px;
+
 
 }
 #contact_envoyer{
@@ -37,9 +41,11 @@
     width: 200px;
     background-color:black;
     color: white;
-    margin-left: 150px;
     border-radius: 10px;
     justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
    
 
 }
@@ -47,6 +53,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+
+}
+.infos_formulaire{
+    width: 500px;
+    height: 300px;
+    font-size: 18px;
+    align-items: center;
+    margin-top:     15px;
+    text-align: justify;
+}
+.formulaire_contact{
 
 }

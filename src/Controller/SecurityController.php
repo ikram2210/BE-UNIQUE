@@ -37,6 +37,7 @@ class SecurityController extends AbstractController
      * @Route("/connexion", name="security_login")
      */
     public function login(){
+        
         return $this->render('security/login.html.twig');
     }
 
@@ -44,4 +45,11 @@ class SecurityController extends AbstractController
      * @Route("/deconnexion", name="security_logout")
      */
     public function logout(){}
+
+     /**
+     * @Route("/fidelity", name="security_fidelity")
+     */
+    public function client(){
+        return $this->render('security/fidelity.html.twig');
+    }
 }
