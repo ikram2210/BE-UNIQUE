@@ -6,7 +6,7 @@
     margin-bottom: 50px;
     height: 500px;
     width: 700px;
-    background-color: #89B79E;
+    background-color: #C8DFD4;
     border-radius: 10px;
     }
     .form-group{
@@ -24,9 +24,17 @@
    
      
     }
-    button{
+    .btn-success{
+    
+        background-color: black;
+        justify-content: center;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-bottom: 40px;
         width: 150px;
-    }
+        
+         
+       }
     .formulaire_connexion{
         display: block;
         width: 160px;
