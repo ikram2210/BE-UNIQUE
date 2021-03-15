@@ -44,17 +44,23 @@
         font-size: 19px;
         
     }
-    button{
-        height: 50px;
-    width: 340px;
-    background-color: black;
     
-    }
     a {
+        
         color: white;
         text-decoration: none;
+        
     }
     a:hover
    {
   color: white;
    }
+   .bouttoncompte1{
+       
+   position: center;
+       margin-left: 100px;
+       padding-top: 10px;
+
+  
+   }
+   

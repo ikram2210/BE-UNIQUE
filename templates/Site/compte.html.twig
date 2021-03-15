@@ -3,37 +3,38 @@
          <link rel = "stylesheet" href= "{{ asset('css/compte.css') }}" >
 {% endblock %} 
 {% block body %}
+<div class = "retour">
+<a href="/"><span class= "fleche"> &#8592;</span></a>
+</div>
 <div class ="compte">
 <div class = "seconnecter">
 <h3>Démarrer la session</h3>
-<p>Saisissez votre adresse e-mail et votre mot de passe</p>
-<form action="{{ path('security_login') }}"method="post">
-    <div class="form-group">
-        <input placeholder="Adresse email..."required name="_username"
-        type="text" class="form-control">
-    </div>
-    <div class="form-group">
-        <input placeholder="Mot de passe..."required name="_password"
-        type="password" class="form-control">
-    </div>
-     
-       <input class="bouttoncompte"
-       type="submit"
-       value="Démarrer la session">
-       
+<p>Pour accéder a votre espace client:</br>
+Préparer votre adresse email </br>et votre mot de passe.</br>
+Si vous rencontrer des difficultés, </br>n'hésitez pas a nous contacter</p>
+{# <form method ="post" action ="traitement.php"> #}
+{# <input class ="formulaire" type ="email"/ >
+</p>
+<P>
+<input class ="formulaire" type ="password"/>
+</p> #}
+<div class ="bouttoncompte">
+<div class ="bouttoncompte1">
+<a class="" href="/connexion">Démarrer la session</a>
+  </div> 
+   </div>     
        </div>
        <div class ="nouveaucompte">
        <h2>Nouveaux clients</h2>
        <p>Créer un compte est très simple.</br> 
        Cliquez simplement sur le bouton</br>  
-       Créer un compte ci-dessous, remplissez le formulaire</br> 
+       Créer un compte ci-dessous,</br> remplissez le formulaire</br> 
        et profitez des avantages.</p>
-       <button class="favorite styled"
-        type="button">
-         <a href = "{{ path('security_registration') }}">Créer un compte</a>
-     </button>
-     
+   <div class ="bouttoncompte">  
+   <div class ="bouttoncompte1">  
+<a class="" href="/inscription">Créer votre compte</a>
+   </div>
+      </div>
        </div>
        </div>
-       
 {% endblock %}
