@@ -92,6 +92,13 @@ body {
                  
     
 }
+a.nav-link{  
+    margin-right: ;
+    color: #EABC44;
+   font-weight: bold;
+   font-size: 20px;
+   
+}
 @media screen and (max-width: 700px)
 {
     .panier-compte{

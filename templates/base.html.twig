@@ -28,6 +28,8 @@
 		</span>
 				</div>
 			  </div>
+
+			  
 			  
 			     <ul class = "menu-accueil">
 					<li><a class = "lien-page" href="/apropos">A propos</a></li>
@@ -46,13 +48,29 @@
       </div> 
         <footer>
 		<div class= "le-footer">
-		<h4>Conditions générales</h4>
-		<span class="facebook">
-        <a href="/Site/facebook" ><img src="{{ asset('images/logos/icone-facebook.jpg') }}" alt="facebook" style="width: 50px; height: 50px"/></a>
-		</span>
-		 <span class="panier">
-        <a href="/Site/instagram" ><img src="{{ asset('images/logos/icone-instagram.jpg') }}" alt="instagram" style="width: 60px; height: 60px"/></a>
-		</span>
+		<div class = "Conditions-générales">
+		
+				<h4>Conditions générales</h4>
+		</div>
+				<div class "connexion_deconexion">
+			{% if not app.user %}
+			
+			<a href="{{ path('security_login')}}" class="nav-link">Se connecter</a>
+				{% else %}
+			
+			<a href="{{ path('security_logout')}}" class="nav-link">se déconnecter</a>
+			{% endif %}
+			</div>
+		
+			<div="reseaux-sociaux">
+			
+				<span class="facebook">
+				<a href="/Site/facebook" ><img src="{{ asset('images/logos/icone-facebook.jpg') }}" alt="facebook" style="width: 50px; height: 50px"/></a>
+				</span>
+				<span class="panier">
+				<a href="/Site/instagram" ><img src="{{ asset('images/logos/icone-instagram.jpg') }}" alt="instagram" style="width: 60px; height: 60px"/></a>
+				</span>
+				</div>
 
 		</div>
 
