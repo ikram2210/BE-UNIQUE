@@ -1,0 +1,62 @@
+
+ tr td {
+	border-bottom: 1px #000 solid;
+}
+  .page_panier{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+    margin-bottom: 100px;
+  }
+  .valider_panier{
+      height: auto;
+      width: 200px;
+      background-color: #96C4B3;
+      
+      
+     
+  }
+  h5{
+      font-size: 20px;
+      margin: 30px;
+     
+  }
+ .lien_paiement{
+
+ display: flex;
+  height: 30px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+ a {
+     color: white;
+     text-decoration: none;
+     
+ }
+ .table{
+     width: 900px;
+ }
+ .tableau_nom{
+    background-color: #96C4B3; 
+    height: 50px;
+    /* width: 700px; */
+ }
+
+
+ .titre_panier{
+   margin-left: auto; 
+   margin-right: auto;
+   font-size: 25px;
+ }
+ .fleche{
+     margin-top: 50px; 
+ }
+ p{
+     font-size: 30px;
+    
+ }
