@@ -8,31 +8,31 @@ label{
 #contact_prenom{
     height: 30px;
     width: 330px;
-    background-color: #CFCFC3;
-    border-color:   #CFCFC3 ;
+    background-color: #DCDCDC;
+    border-color:   #DCDCDC ;
 
  }
 #contact_nom{
     height: 30px;
     width: 330px;
-    background-color:  #CFCFC3;
-    border-color:   #CFCFC3;
+    background-color:  #DCDCDC;
+    border-color:   #DCDCDC;
   
  
 }
 #contact_email{
     height: 30px;
     width: 330px;
-    background-color:  #CFCFC3;
-    border-color:   #CFCFC3 ;
+    background-color: #DCDCDC;
+    border-color:   #DCDCDC ;
 
 
 }
 #contact_message{
     height: 100px;
     width: 330px;
-    background-color:  #CFCFC3;
-    border-color:   #CFCFC3 ;
+    background-color:  #DCDCDC;
+    border-color:   #DCDCDC ;
 
 
 }

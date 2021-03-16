@@ -28,19 +28,25 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  background-color: rgba(2, 31, 26, 0.6);
+  width: 200px;
+  text-decoration: none;
+  border-radius: 10px 5% / 20px 30px;
+
   
- 
+  
 
 }
-
 
 .photo{
 
   width: 350px;
   height: 350px;
   border-radius: 20px;
+ 
 
 }
+
 h3{
   font-family: Tangerine;
 
@@ -49,6 +55,8 @@ h3{
     font-size: 30px;
     font-weight: bold;
     text-decoration : underline;
+    
+    
 }
 .lien a:link {
  
@@ -56,13 +64,11 @@ h3{
   color: white;
 
   text-decoration: none;
+  
+  
 
 }
-.lien a:visited {
 
-  color: purple;
-
-}
 .lien a:hover {
 
   color:  white;
@@ -74,17 +80,7 @@ h3{
   font-style: normal;
 
 }
-.lien a:active {
 
-  color: #FF0000;
-
-  text-decoration: underline;
-
-   font-weight: bold;
-
-  font-style: normal;
-
-}
 @media screen and (max-width: 1280px)
 {
   #content_category {
