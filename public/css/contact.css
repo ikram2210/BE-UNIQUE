@@ -1,70 +1,57 @@
-
-label{
-    display: block;
-	width: 100px;
-
+label {
+  display: block;
+  width: 100px;
 }
 
-#contact_prenom{
-    height: 30px;
-    width: 330px;
-    background-color: #DCDCDC;
-    border-color:   #DCDCDC ;
-
- }
-#contact_nom{
-    height: 30px;
-    width: 330px;
-    background-color:  #DCDCDC;
-    border-color:   #DCDCDC;
-  
- 
+#contact_prenom {
+  height: 30px;
+  width: 330px;
+  background-color: #dcdcdc;
+  border-color: #dcdcdc;
 }
-#contact_email{
-    height: 30px;
-    width: 330px;
-    background-color: #DCDCDC;
-    border-color:   #DCDCDC ;
-
-
+#contact_nom {
+  height: 30px;
+  width: 330px;
+  background-color: #dcdcdc;
+  border-color: #dcdcdc;
 }
-#contact_message{
-    height: 100px;
-    width: 330px;
-    background-color:  #DCDCDC;
-    border-color:   #DCDCDC ;
-
-
+#contact_email {
+  height: 30px;
+  width: 330px;
+  background-color: #dcdcdc;
+  border-color: #dcdcdc;
 }
-#contact_envoyer{
-    height: 40px;
-    width: 200px;
-    background-color:black;
-    color: white;
-    border-radius: 10px;
-    justify-content: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20px;
-   
-
+#contact_message {
+  height: 100px;
+  width: 330px;
+  background-color: #dcdcdc;
+  border-color: #dcdcdc;
 }
-.conteneur_contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    margin-top: 80px;
-
+#contact_envoyer {
+  height: 40px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
 }
-.infos_formulaire{
-    width: 500px;
-    height: 300px;
-    font-size: 18px;
-    align-items: center;
-    margin-top:     15px;
-    text-align: justify;
+.conteneur_contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 80px;
 }
-.formulaire_contact{
-
+.infos_formulaire {
+  width: 500px;
+  height: 300px;
+  font-size: 18px;
+  align-items: center;
+  margin-top: 15px;
+  text-align: justify;
+}
+.formulaire_contact {
 }

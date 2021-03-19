@@ -1,4 +1,4 @@
-.apropos{
+.apropos {
   margin-top: 70px;
   display: flex;
   flex-direction: row;
@@ -7,27 +7,28 @@
   margin-right: 70px;
 }
 footer {
-   
-    bottom:0;
-    width:100%;
-    }
-    /* .photo-apropos{
+  bottom: 0;
+  width: 100%;
+}
+/* .photo-apropos{
 
       height: 500px;
       width: 500px;
  
       } */
-      .apropos-image{
-        border-radius: 20px;
-        height: 500px;
-        width: 600px;
-      }
-      .texte{
-        margin-left: 80px;
-        margin-right: 80px;
-        font-size: 25px;
-      }
+.apropos-image {
+  border-radius: 20px;
+  height: 500px;
+  width: 600px;
+}
+.texte {
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 25px;
+}
 
-  p {
-    
-  }
+p {
+}
+.box {
+  opacity: 1;
+}

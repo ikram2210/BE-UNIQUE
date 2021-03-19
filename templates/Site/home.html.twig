@@ -1,31 +1,26 @@
 {% extends 'base.html.twig' %}
- {% block stylesheets %}
-         <link rel = "stylesheet" href= "{{ asset('css/home.css') }}" >
-
- {% endblock %} 
-{% block body %}
-<section>
-   <div id="content_category">
-    <div class="box" >
-    <img class ="photo"src= "{{ asset('images/Sacs/Agareb.jpg') }}" alt="sac"/>
-    <a class="lien" href="/produits?category=Sacs">Sacs</a>
-    </div>
-    <div class="box">
-    <img class ="photo"src= "{{ asset('images/bijoux/Kafssa.jpg') }}" alt="bracelet"/>
-    <a class="lien" href="/produits?category=Bijoux">Bijoux</a>
-    </div>
-    <div class="box">
-    <img class ="photo"src= "{{ asset('images/lunettes/Beja.jpg') }}" alt="lunette"/>
-    <a class="lien" href="/produits?category=Lunettes">Lunettes</a>
-</div>
-</section>
-<div class = "bienvenue">
-<h3>BIENVENUE</h3>
-</div>
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
 {% endblock %}
+{% block body %}
+	<section>
+		<div id="content_category">
+			<div class="box">
+				<img class="photo" src="{{ asset('images/Sacs/Agareb.jpg') }}" alt="sac"/>
+				<a class="lien" href="/produits?category=Sacs">Sacs</a>
+			</div>
+			<div class="box">
+				<img class="photo" src="{{ asset('images/bijoux/Kafssa.jpg') }}" alt="bracelet"/>
+				<a class="lien" href="/produits?category=Bijoux">Bijoux</a>
+			</div>
+			<div class="box">
+				<img class="photo" src="{{ asset('images/lunettes/Beja.jpg') }}" alt="lunette"/>
+				<a class="lien" href="/produits?category=Lunettes">Lunettes</a>
+			</div>
+		</section>
+		<div class="bienvenue">
+			<h3>BIENVENUE</h3>
+		</div>
 
-
-
-
-
+	{% endblock %}

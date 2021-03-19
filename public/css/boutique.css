@@ -1,27 +1,23 @@
-.contenu-produit{
+.contenu-produit {
   height: 400px;
   width: 300px;
   margin-left: 30px;
   margin-top: 50px;
-  
-
 }
 
-.affichage-produit{
-
+.affichage-produit {
   display: flex;
-  flex-wrap:wrap;
-  flex-direction:row;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   height: auto;
 }
-.image-produit{
-  border-radius: 10px;
+.image-produit {
+  border-radius: 50% 20% / 10% 40%;
   width: 300px;
   height: 300px;
-
 }
-p{
+p {
   font-size: 25px;
   font-family: bold;
   margin-bottom: 0;

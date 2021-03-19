@@ -87,6 +87,16 @@ return $this->render('Site/produits.html.twig', [
 
     }
 
+    
+    /**
+     *  @Route("/moncontact", name="mon_contact")
+     */
+    public function  moncontact(){
+        return $this->render('Site/moncontact.html.twig');
+
+    }
+
+
      
 
 }

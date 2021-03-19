@@ -1,111 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
 
-
-
-
-
-
-body, html {
-    height: 100%;
-    background-color: #ffffff
-    ;
+body,
+html {
+  height: 100%;
+  background-color: #ffffff;
 }
 
 footer {
-        
-        bottom:0;
-        width:100%;
-        
-        }
+  bottom: 0;
+  width: 100%;
+}
 
-header{
-    /* background-color:  #c0ddff; */
+header {
+  /* background-color:  #c0ddff; */
 }
 h1 {
-    font-family: Tangerine;
-    font-weight: bold;
-    font-size: 70px;
+  font-family: Tangerine;
+  font-weight: bold;
+  font-size: 70px;
 
-    display: flex;
-     align-items: center;
-     justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    }
-    
-body {  
-  
-    display: flex;
-        flex-direction: column;    
-  
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .image {
-
-    height: 250px;
-    width: 250px;
+  height: 250px;
+  width: 250px;
 }
-.logo{
-    height: 180px;
-    width: 180px;
-
+.logo {
+  height: 180px;
+  width: 180px;
 }
 
-.entete{
-    
+.entete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.panier-compte {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-right: 50px;
+}
+.panier {
+  margin-top: 10px;
+}
+.le-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 40px;
+}
+.lien-page {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+}
+.menu-accueil {
+  font-family: Tangerine;
+  font-size: 30px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+a.nav-link {
+  margin-right: ;
+  color: #eabc44;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 700px) {
+  .panier-compte {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.panier-compte{
-    display: flex;
-     align-items: center;
-    flex-direction: row-reverse;
+    align-items: center;
+    flex-direction: column-reverse;
     margin-right: 50px;
- 
-}
-.panier{
-    margin-top: 10px;
-}
-.le-footer{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 40px;
-}
-.lien-page{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-}
-.menu-accueil{
-    font-family: Tangerine;
-        font-size: 30px;
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            margin: 0;
-            padding: 0;
-                 
-    
-}
-a.nav-link{  
-    margin-right: ;
-    color: #EABC44;
-   font-weight: bold;
-   font-size: 20px;
-   
-}
-@media screen and (max-width: 700px)
-{
-    .panier-compte{
-        display: flex;
-         align-items: center;
-        flex-direction: column-reverse;
-        margin-right: 50px;
-     
-    }
+  }
 }
