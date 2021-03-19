@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 {% block title %}Contact{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+
+{% endblock %}
 
 {% block body %}
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
@@ -46,7 +50,7 @@ alert("Une erreur est survenue, votre message n'a pas été envoyé !");
             </div>
         </div>
     </form>
-    <div class="conteneur_contact">
+
 		<div class="infos_formulaire">
 			<P>What is Lorem Ipsum?
 				

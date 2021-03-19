@@ -40,7 +40,7 @@ label {
 }
 .conteneur_contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-around;
   margin-bottom: 30px;
   margin-top: 80px;
