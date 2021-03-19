@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ContactController extends AbstractController
 {
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/messagecontact", name="messagecontact")
      */
     public function index( Request $request, \Swift_Mailer $mailer)
     { 

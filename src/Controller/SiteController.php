@@ -89,10 +89,10 @@ return $this->render('Site/produits.html.twig', [
 
     
     /**
-     *  @Route("/moncontact", name="mon_contact")
+     *  @Route("/contact", name="contact")
      */
     public function  moncontact(){
-        return $this->render('Site/moncontact.html.twig');
+        return $this->render('Site/contact.html.twig');
 
     }
 
