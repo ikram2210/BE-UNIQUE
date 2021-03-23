@@ -22,18 +22,15 @@
   text-align: justify;
 }
 h4{
- margin-top: 20px ;
+ margin-top: 30px ;
+
  font-size: 30px;
 text-align: center;
 font-family: Roboto;
 font-weight: bold;
 
 }
-#contact-form{
 
-  margin-top: 40px;
-  
-}
   .form-control{
     width: 300px;
   }
@@ -97,15 +94,14 @@ h6{
    }
   .conteneur_contact{
     flex-direction: column;
-    margin-top: -50px;
     height: auto;
     margin-right: auto;
     margin-left:auto;
-    margin-bottom: 0;
+ 
   }
 
  .form-control{
-   width: 600px;
+   width: 500px;
 
  }
   
@@ -118,21 +114,20 @@ h6{
   
   }
   input{
-    height: 50px;
+    height: 60px;
+    font-size: 25;
     
 
   }
   textarea{
-    height: 110px;
+    height: 90px;
   }
   
-  #contact-form{
+  /* #contact-form{
     
     height: auto;
-    
- 
 
-  } 
+  }  */
   .infos_formulaire{
   height: auto;
   margin-right: auto;
@@ -151,13 +146,15 @@ h6{
     font-weight: bold;
   }
   label{
-    font-size: 20px;
+    font-size: 30px;
+    height: 40px;
     
   }
   
   .a_bientot{
-    height: 200px;
-    width: 200px;
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
   }
   h6{
     font-size: 15px;
