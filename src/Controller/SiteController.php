@@ -91,11 +91,26 @@ return $this->render('Site/produits.html.twig', [
     /**
      *  @Route("/contact", name="contact")
      */
-    public function  moncontact(){
+    public function  contact(){
         return $this->render('Site/contact.html.twig');
 
     }
 
+    /**
+     *  @Route("/mentions", name="mentions")
+     */
+    public function  mentions(){
+        return $this->render('Site/mentions.html.twig');
+
+    }
+    /**
+     *  @Route("/conditions", name="conditions")
+     */
+    public function  conditions(){
+        return $this->render('Site/conditions.html.twig');
+
+    }
+    
 
      
 

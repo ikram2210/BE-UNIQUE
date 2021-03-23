@@ -61,6 +61,8 @@ h3 {
   font-style: normal;
 }
 
+
+
 @media screen and (max-width: 1280px) {
   #content_category {
     display: flex;

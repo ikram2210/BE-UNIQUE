@@ -8,9 +8,8 @@
   width: 700px;
   border-radius: 20px;
 }
-.produits-details {
-}
-.detail-article {
+
+.detail_article {
   margin-left: 100px;
 }
 .bouttonpanier {
@@ -18,8 +17,8 @@
   width: 340px;
   background-color: black;
   color: white;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
 }
 h2 {
   margin-bottom: 20px;
