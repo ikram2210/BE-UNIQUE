@@ -11,6 +11,7 @@
 
 .detail_article {
   margin-left: 100px;
+  font-family: Roboto;
 }
 .bouttonpanier {
   height: 50px;
@@ -22,12 +23,15 @@
 }
 h2 {
   margin-bottom: 20px;
+  font-family: Roboto;
 }
 h3 {
   font-size: 20px;
+  font-family: Roboto;
 }
 .prix {
   font-weight: bold;
+  font-family: Roboto;
 }
 
 .la-photo {
@@ -52,4 +56,37 @@ h3 {
 .la-photo.hover img {
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+@media screen and (max-width: 1280px) {
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+  .fleche{
+    margin-left: 130px;
+    margin-top: 30px;
+  }
+  .produits-details {
+  display: flex;
+  flex-direction: column;
+  margin: 80px;
+}
+.detail_article {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+.bouttonpanier{
+  font-size: 25px;
+}
+p{
+  font-size: 20px;
+}
+.image-details {
+  height: 600px;
+  width: 700px;
+}
+.fleche{
+  margin-top: 50px;
+  margin-left: 80px;
+}
 }
