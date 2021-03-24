@@ -5,22 +5,25 @@
 	<link rel="stylesheet" href="{{ asset('css/compte.css') }}">
 {% endblock %}
 {% block body %}
+<section>
 	<div class="retour">
-		<a href="/">
-			<span class="fleche">
-				&#8592;</span>
-		</a>
+		
+<div class="fleche">
+		<a href="/"><img src="{{ asset('images/logos/fleche.png') }}" alt="flèche retourne à la page d'accueil" height="50" width="100"></a>
+	</div>
 	</div>
 	<div class="compte">
-		<div class="seconnecter">
-			<h3>Accéder à mon compte</h3>
+		<div class="se_connecter">
+			<h2>Accéder à mon compte</h2>
 			<p>Pour accéder a votre espace client:</p>
-		</br>
-		Préparer votre adresse email
-	</br>et votre mot de passe.</br>
-Si vous rencontrer des difficultés,</br>n'hésitez pas a nous contacter</p>{# <form method ="post" action ="traitement.php"> #}{# <input class ="formulaire" type ="email"/ >
+		<p>
+		Préparer votre adresse email</p>
+	<p>et votre mot de passe.</p>
+<p>Si vous rencontrer des difficultés,</p><p>n'hésitez pas a nous contacter</p>{# <form method ="post" action ="traitement.php"> #}{# <input class ="formulaire" type ="email"/ >
 	</p>
 	<P>
 	<input class ="formulaire" type ="password"/>
-	</p> #}<div class="bouttoncompte"><div class="bouttoncompte1">
-<a class="" href="/connexion">M'identifier</a></div></div></div><div class="nouveaucompte"><h2>Nouveaux clients</h2><p>Créer un compte est très simple.</p></br>Cliquez simplement sur le bouton</br>Créer un compte ci-dessous,</br>remplissez le formulaire</br>et profitez des avantages.</p><div class="bouttoncompte"><div class="bouttoncompte1"><a class="" href="/inscription">Créer votre compte</a></div></div></div></div> {% endblock %}
+	</p> #}<div class="boutton_compte"><div class="bouttoncompte1">
+<a class="" href="/connexion">M'identifier</a></div></div></div><div class="nouveaucompte"><h2>Nouveaux clients</h2><p>Créer un compte est très simple.</p><p>Cliquez simplement sur le bouton</p><p>Créer votre compte ci-dessous,</p><p>remplissez le formulaire</p><p>et profitez des avantages.</p><div class="boutton_compte"><div class="bouttoncompte1"><a class="" href="/inscription">Créer mon compte</a></div></div></div></div> 
+</section>
+{% endblock %}
