@@ -80,7 +80,9 @@ a.nav-link {
   margin-right: ;
   color: #eabc44;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
+  text-decoration: none;
+
 }
 a.lien_mentions{
 text-decoration: none;
@@ -90,6 +92,29 @@ color: black;
   text-decoration: none;
   color: black; 
 }
+.reseaux-sociaux{
+padding-top: 30px;
+line-height: 70px;
+ display: flex;
+justify-content: space-between; 
+width: 140px;
+}
+.connexion_deconexion{
+margin-top: 30px;
+}
+h6{
+  font-size: 18px;
+  margin: 15px;
+
+}
+.Conditions-générales{
+  margin-top: 20px;
+}
+
+
+
+
+
 @media screen and (max-width: 700px) {
   .panier-compte {
     display: flex;

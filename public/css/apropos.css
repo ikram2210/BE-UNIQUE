@@ -1,34 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+.fleche{
+  margin-left: 130px;
+  margin-top: 30px;
+}
 .apropos {
-  margin-top: 70px;
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 70px;
   margin-right: 70px;
+  height: auto;
 }
 footer {
   bottom: 0;
   width: 100%;
 }
-/* .photo-apropos{
 
-      height: 500px;
-      width: 500px;
- 
-      } */
-.apropos-image {
-  border-radius: 20px;
-  height: 500px;
-  width: 600px;
-}
-.texte {
-  margin-left: 80px;
-  margin-right: 80px;
-  font-size: 25px;
-}
 
 p {
 }
 .box {
   opacity: 1;
+}
+.photo-apropos{
+  border-radius: 20px;
+}
+
+.texte{
+  width: 500px;
+  height: auto;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Roboto;
+}
+h5{
+  font-family: Roboto;
+  font-size: 25px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+h2{
+  margin-top: 0px;
+  font-family: Tangerine;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+#ligne{
+  height: 5px;
+    width: 50px;
+    background-color: #C4C4C4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+.apropos-image {
+  font-family: Roboto;
+  position: relative;
+  margin: 10px 20px;
+
+  height: 500px;
+
+  width: 500px;
+
+  color: #ffffff;
+  text-align: right;
+  line-height: 1.4em;
+  background-color: #1a1a1a;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.apropos-image * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.apropos-image img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.apropos-image figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+
+}
+.apropos-image h3,
+.apropos-image p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+.apropos-image h3 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.apropos-image p {
+  font-size: 0.8em;
+}
+.apropos-image a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.apropos-image:hover img,
+.apropos-image.hover img {
+  width: 55%;
+  right: -10%;
+}
+.apropos-image:hover figcaption h3,
+.apropos-image.hover figcaption h3,
+.apropos-image:hover figcaption p,
+.apropos-image.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .fleche{
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  section{
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .apropos {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    width: 800px;
+  }
+    .texte{
+      width: 800px;
+      height: auto;
+      text-align: justify;
+      font-size: 18px;
+      font-family: Roboto;
+      margin-bottom: 100px;
+    }
+    .apropos-image{
+      width: 700px;
+ 
+    }
+    h2{
+      margin-top: 40px;
+      font-size: 50px;
+    }
+    
+
 }

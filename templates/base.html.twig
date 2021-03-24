@@ -53,7 +53,7 @@
 				<a class="conditions" href="/conditions" ><h6>Conditions générales</h6></a>
 				<a class="lien_mentions" href="/mentions" ><h6>Mentions légales</h6></a>
 		</div>
-				<div class "connexion_deconexion">
+	    <div class = "connexion_deconexion">
 			{% if not app.user %}
 			
 			<a href="{{ path('security_login')}}" class="nav-link">Se connecter</a>
@@ -61,21 +61,23 @@
 			
 			<a href="{{ path('security_logout')}}" class="nav-link">Se déconnecter</a>
 			{% endif %}
-			</div>
+	    </div>
 		
-			<div="reseaux-sociaux">
+	    <div class ="reseaux-sociaux">
 			
 				<span class="facebook">
 				<a href="/Site/facebook" ><img src="{{ asset('images/logos/icone-facebook.jpg') }}" alt="facebook" style="width: 50px; height: 50px"/></a>
 				</span>
-				<span class="panier">
-				<a href="/Site/instagram" ><img src="{{ asset('images/logos/icone-instagram.jpg') }}" alt="instagram" style="width: 60px; height: 60px"/></a>
+				<span class="instagram">
+				<a href="/Site/instagram" ><img src="{{ asset('images/logos/icone-instagram.jpg') }}" alt="instagram" style="width: 50px; height: 50px"/></a>
 				</span>
-				</div>
+	    </div>
 
 		</div>
 
+ 
 
+ 
 		</footer>  
     </body>
 </html>

@@ -5,22 +5,43 @@
 	<link rel="stylesheet" href="{{ asset('css/apropos.css') }}">
 {% endblock %}
 {% block body %}
+{# <section>
 	<div class="apropos">
-		<div class="texte">
-			<P>What is Lorem Ipsum?
-				
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-				when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				 It has survived not only five centuries, but also the leap into electronic typesetting, 
-				 remaining essentially unchanged. It was popularised in the 1960s with the release of
-				  Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-				  software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		</div>
+		
 		<div class="photo-apropos">
 			<img class="apropos-image" src="{{ asset('images/Sacs/Najet.jpg') }}" alt="image"/>
 		</div>
 	</div>
+</section> #}
+<section>
+<div class="fleche">
+		<a href="/"><img src="{{ asset('images/logos/fleche.png') }}" alt="flèche retourne à la page d'accueil" height="50" width="100"></a>
+	</div>
+<div class="apropos">
+<div class="texte">
+<h5>Élégance</h5>
+			<P>
+Les accessoires ajoutent un style moderne et unique au look feminin. C’est pour cette raison notre boutique vous propose un grand choix des bijoux, lunettes, sac, et montres de bonnes qualités et à des prix imbattables.
+</p><p>Chez Be Unique, vous trouverez toujours le bijou parfait pour toutes les occasions. Laissez-vous séduire par notre grande variété de bijoux et devenez vous-même l’objet de tous les regards.</p><p>Nous proposons également de nombreux accessoires stylés et super tendance : sacs à main, pochettes, lunettes de soleil, et bien plus encore !
+</p><p>Vos bijoux. Vos envies. Suivez votre instinct. Vous êtes plutôt élégante ? Ou hippie romantique ? Quel que soit votre style, vous trouverez à coup sûr votre bonheur chez Be Unique</P>
+		</div>
+<figure class="apropos-image">
+  <figcaption>
+    <h3> Chaque bijou Be Unique est unique! Juste comme toi !</h3>
+  
+  </figcaption>
+<img class= "photo-apropos" src="{{ asset('images/Sacs/Najet.jpg') }}" alt="image-apropos" />
+</figure>
 
+</div>
+</section>
+<div class="bienvenue">
+			<h2>Bienvenue</h2Q>
+			<div id = "ligne"></div>
+		</div>
 
+{% endblock %}
+{% block javascripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="{{ asset('js/detail.js') }}"></script>
 {% endblock %}
