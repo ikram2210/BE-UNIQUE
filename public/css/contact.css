@@ -14,6 +14,10 @@
   margin-bottom: 60px;
   height: auto;
 }
+.formulaire_contact{
+  margin-top:30px;
+}
+
 .infos_formulaire {
   width: 500px;
   height: 300px;
@@ -44,6 +48,7 @@ font-weight: bold;
     height: 100px;
   }
 label{
+
   display: block;
    font-size: 20px ;
    font-family: Roboto;
