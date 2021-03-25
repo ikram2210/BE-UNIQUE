@@ -126,6 +126,7 @@ h6{
     align-items: center;
     flex-direction: column-reverse;
     margin-right: 50px;
+    padding-bottom: 30px;
   }
   
 }

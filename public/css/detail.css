@@ -77,7 +77,9 @@ h3 {
   text-align: justify;
 }
 .bouttonpanier{
-  font-size: 25px;
+  font-size: 30px;
+  width: 450px;
+  height: 80px;
 }
 p{
   font-size: 20px;
