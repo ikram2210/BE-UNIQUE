@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+.fleche{
+  margin-left: 100px;
+  margin-top: 30px;
+}
 .formulaire_inscription {
+  font-family: Roboto;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
-  height: 500px;
+  height: 450px;
   width: 700px;
   background-color: #c8dfd4;
   border-radius: 10px;
 }
 label {
+  font-family: Roboto;
   display: block;
   width: 160px;
   float: left;
   margin-left: 80px;
 }
 #registration_username {
+  font-family: Roboto;
   height: 30px;
   width: 330px;
   background-color: #dcdcdc;
@@ -22,6 +30,7 @@ label {
 }
 
 #registration_email {
+  font-family: Roboto;
   height: 30px;
   width: 330px;
   background-color: #dcdcdc;
@@ -29,6 +38,7 @@ label {
   margin-bottom: 5px;
 }
 #registration_password {
+  font-family: Roboto;
   height: 30px;
   width: 330px;
   background-color: #dcdcdc;
@@ -36,6 +46,7 @@ label {
   margin-bottom: 5px;
 }
 #registration_confirm_password {
+  font-family: Roboto;
   height: 30px;
   width: 330px;
   background-color: #dcdcdc;
@@ -43,23 +54,105 @@ label {
   margin-bottom: 5px;
 }
 .btn-success {
+  font-family: Roboto;
   background-color: black;
   justify-content: center;
+  color: white;
   border-radius: 10px;
-  margin-top: 5px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  /* margin-bottom: 40px; */
   width: 150px;
-}
-h2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  height: 35px;
   font-size: 20px;
+  margin-left: 40%;
+}
+h4 {
+  font-family: Roboto;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  font-size: 28px;
   text-align: center;
 }
 a {
+  
   color: white;
   text-decoration: none;
 }
 a:hover {
   color: white;
 }
+@media screen and (max-width: 1280px) {
+
+  .formulaire_inscription {
+
+    margin-bottom: 50px;
+    height: 1100px;
+    width: 700px;
+    background-color: #c8dfd4;
+    border-radius: 10px;
+  }
+  label {
+    width: 400px;
+    margin-left: 0;
+    height: 50px;
+    font-size: 35px;
+    margin-left: 6%;
+
+  }
+  /* form{
+    margin-left: auto;
+    margin-right: auto;
+  } */
+  #registration_username{
+    width: 600px;
+    height: 80px;
+    font-size: 40px;
+    margin-left: 6%;
+    margin-bottom: 40px;
+
+  }
+  #registration_email{
+    width: 600px;
+    height: 80px;
+    font-size: 40px;
+    margin-left: 6%;
+    margin-bottom: 40px;
+  }
+  #registration_password{
+    width: 600px;
+    height: 80px;
+    font-size: 40px;
+    margin-left: 6%;
+    margin-bottom: 40px;
+    
+  }
+  #registration_confirm_password{
+    width: 600px;
+    height: 80px;
+    font-size: 40px;
+    margin-left: 6%;
+    margin-bottom: 40px;
+  }
+  input{
+
+    width: 700px;
+  }
+  h4{
+    padding-top: 100px;
+    margin-bottom: 80px;
+    font-size: 50px;
+  }
+  .btn-success {
+    
+    margin-top: 20px;
+
+    width: 250px;
+    height: 75px;
+    font-size: 35px;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+  }
+}
+
+
