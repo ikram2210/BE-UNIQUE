@@ -3,7 +3,10 @@
 	<link rel="stylesheet" href="{{ asset('css/login.css') }}">
 {% endblock %}
 {% block body %}
-
+<section>
+<div class="fleche">
+		<a href="/"><img src="{{ asset('images/logos/fleche.png') }}" alt="flèche retourne à la page d'accueil" height="50" width="100"></a>
+	</div>
 	<div class="page_connexion">
 		<div class="formulaire_connexion">
 			<h4>Connexion</h4>
@@ -20,6 +23,7 @@
 				</div>
 			</div>
 		</div>
+</section>
 
 
 	{% endblock %}
