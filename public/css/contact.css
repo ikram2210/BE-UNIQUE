@@ -49,13 +49,13 @@ label{
    font-family: Roboto;
 
 }
-.btn{
+/* .btn{
   width: 160px;
   border-radius: 10px;
   
-}
+} */
 
-.button{
+.button_envoyer{
   text-align: center;
 }
 .btn-info{
