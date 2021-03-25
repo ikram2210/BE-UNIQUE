@@ -10,6 +10,7 @@ html {
 footer {
   bottom: 0;
   width: 100%;
+  
 }
 
 header {
@@ -24,6 +25,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
 
 body {
   display: flex;
@@ -62,10 +64,11 @@ body {
   margin-top: 40px;
 }
 .lien-page {
+  
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 50px;
 }
 .menu-accueil {
   font-family: Tangerine;
@@ -101,6 +104,8 @@ width: 140px;
 }
 .connexion_deconexion{
 margin-top: 30px;
+font-size: 30px;
+font-family: Roboto;
 }
 h6{
   font-size: 18px;
@@ -109,17 +114,18 @@ h6{
 }
 .Conditions-générales{
   margin-top: 20px;
+  font-family: Roboto;
+  font-size: 30px;
 }
 
 
 
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1280px) {
   .panier-compte {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
     margin-right: 50px;
   }
+  
 }

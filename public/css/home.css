@@ -6,7 +6,7 @@ body {
 #content_category {
   margin-top: 80px;
   display: flex;
-
+  margin-bottom: 80px;
   flex-direction: row-reverse;
   justify-content: space-around;
 }
@@ -47,20 +47,41 @@ h3 {
   /* text-decoration: underline; */
    
 }
-h2{
+
+h2 {
+  padding-top: 30px;
+  position: relative;
   margin-top: 0px;
   font-family: Tangerine;
   text-align: center;
   font-weight: bold;
-  font-size: 50px;
-}
+  font-size: 70px;
+  
+  letter-spacing: 8px;
+  background: linear-gradient( #000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 7s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  }
+  @keyframes animate {
+  0% {
+  background-position: -500%;
+  }
+  100% {
+  background-position: 500%;
+  }
+  }
+
 #ligne{
   height: 5px;
     width: 50px;
     background-color: #C4C4C4;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: -40px;
+    margin-bottom: 30px;
 }
 .lien a:link {
   color: white;
