@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+  .fleche{
+    margin-left: 80px;
+    margin-top: 30px;
+  }
 tr td {
   border-bottom: 1px #000 solid;
+  font-family: Roboto;
+  
+}
+h4{
+  margin-bottom: 0;
 }
 .page_panier {
   display: flex;
@@ -11,7 +21,7 @@ tr td {
 .valider_panier {
   height: auto;
   width: 200px;
-  background-color: #96c4b3;
+  background-color: #c8dfd4;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,6 +30,7 @@ h5 {
   font-size: 20px;
   margin-left: 20%;
   margin-right: 20%;
+  font-family: Roboto;
 }
 .lien_paiement {
   display: flex;
@@ -38,7 +49,7 @@ a {
   width: 900px;
 }
 .tableau_nom {
-  background-color: #96c4b3;
+  background-color: #c8dfd4;
   height: 50px;
   /* width: 700px; */
 }
@@ -47,14 +58,74 @@ a {
   margin-left: auto;
   margin-right: auto;
   font-size: 25px;
+  font-family: Roboto;
 }
 .fleche {
   margin-top: 50px;
 }
 p {
   font-size: 30px;
+  font-family: Roboto;
 }
 #lien_validation {
   margin-left: 25%;
   margin-right: 25%;
+  font-family: Roboto;
+}
+@media screen and (max-width: 1280px) {
+  
+  .page_panier{
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px ;
+  }
+
+
+footer{
+   position:absolute;
+    bottom:0;
+    padding-top:50px;
+    height:50px;
+    width: 100%;
+    
+    }
+    .valider_panier{
+      margin-top: 50px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    h4{
+   
+      font-size: 50px;
+      margin-bottom: 100px;
+    }
+    th{
+      font-size: 30px;
+    }
+    td{
+      font-size: 30px;
+    }
+    h5{
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    .lien_paiement{
+ 
+      font-size: 40px;
+      height: 70px;
+      width: 500px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .image_corbeille{
+      width: 60px;
+      height: 60px;
+    }
+    #lien_validation{
+      
+
+    }
+     
 }
