@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 h4{
+    font-size: 25px;
     text-align: center;
     margin-top: 50px;
     margin-bottom:50px ;
     text-decoration: none;
+    font-family: Roboto;
+}
+.mentions_legales{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: justify;
+    font-family: Roboto;
 }

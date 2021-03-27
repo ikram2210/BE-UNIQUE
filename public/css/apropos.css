@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-.fleche{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.fleche {
   margin-left: 130px;
   margin-top: 30px;
 }
@@ -17,44 +17,41 @@ footer {
   width: 100%;
 }
 
-
-p {
-}
 .box {
   opacity: 1;
 }
-.photo-apropos{
+.photo-apropos {
   border-radius: 20px;
 }
 
-.texte{
+.texte {
   width: 500px;
   height: auto;
   text-align: justify;
   font-size: 20px;
   font-family: Roboto;
 }
-h5{
+h5 {
   font-family: Roboto;
   font-size: 25px;
   margin-top: -10px;
   margin-bottom: 10px;
 }
 
-h2{
+h2 {
   margin-top: 0px;
   font-family: Tangerine;
   text-align: center;
   font-weight: bold;
   font-size: 50px;
 }
-#ligne{
+#ligne {
   height: 5px;
-    width: 50px;
-    background-color: #C4C4C4;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
+  width: 50px;
+  background-color: #c4c4c4;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
 }
 .apropos-image {
   font-family: Roboto;
@@ -95,7 +92,6 @@ h2{
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 20px 0 20px 20px;
-
 }
 .apropos-image h3,
 .apropos-image p {
@@ -106,7 +102,7 @@ h2{
   opacity: 0;
 }
 .apropos-image h3 {
-  font-family: 'Playfair Display', Arial, sans-serif;
+  font-family: "Playfair Display", Arial, sans-serif;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
@@ -134,15 +130,39 @@ h2{
   transform: translateX(0px);
   opacity: 1;
 }
+h2 {
+  padding-top: 30px;
+  position: relative;
+  margin-top: 0px;
+  font-family: Tangerine;
+  text-align: center;
+  font-weight: bold;
+  font-size: 70px;
+  letter-spacing: 8px;
+  background: linear-gradient(#000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
 
 @media screen and (max-width: 1280px) {
-  .fleche{
+  .fleche {
     margin-top: 30px;
     margin-left: 10px;
   }
-  section{
+  section {
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
   }
 
   .apropos {
@@ -156,22 +176,19 @@ h2{
     height: auto;
     width: 800px;
   }
-    .texte{
-      width: 800px;
-      height: auto;
-      text-align: justify;
-      font-size: 18px;
-      font-family: Roboto;
-      margin-bottom: 100px;
-    }
-    .apropos-image{
-      width: 700px;
- 
-    }
-    h2{
-      margin-top: 40px;
-      font-size: 50px;
-    }
-    
-
+  .texte {
+    width: 800px;
+    height: auto;
+    text-align: justify;
+    font-size: 18px;
+    font-family: Roboto;
+    margin-bottom: 100px;
+  }
+  .apropos-image {
+    width: 700px;
+  }
+  h2 {
+    margin-top: 40px;
+    font-size: 50px;
+  }
 }

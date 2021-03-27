@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Commandes
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/order.css') }}">
+{% endblock %}
+
+{% block body %}
+
+
+	<div class="table_commande">
+		<div class="w-full max-w-md lg:max-w-3xl bg-white shadow-lg rounded px-6 lg:px-12 pt-6 pb-8 mb-4">
+			<div class="text-dark-orange text-xl font-bold flex justify-center py-2 mb-4 lg:mb-8 text-center">
+				<h4>Commandes</h4>
+			</div>
+
+			{% for order in orders %}
+				<table class="w-full font-body lg:text-base mb-10">
+					<div class="numero_commande">N° de commande :
+						{{ order.id }}</div>
+					<thead class="border-b-2 text-right text-base text-dark-blue">
+						<tr class="lg:h-10">
+							<th></th>
+							<th class="text-left">Produit</th>
+							<th class="w-20">Prix</th>
+							<th class="w-20">Total</th>
+							<th></th>
+						</tr>
+					</thead>
+					{% for orderProduit in order.hasProduits %}
+						<tbody class="align-text-top border-b-2 text-right">
+							<tr class="leading-tight lg:leading-10">
+								<td>{{ orderProduit.quantite }}</td>
+								<td class="text-left">x
+									{{ orderProduit.produit.nom }}</td>
+								<td>{{ orderProduit.produit.prix|number_format(2) }}
+									€</td>
+								<td>{{ orderProduit.getTotal|number_format(2) }}
+									€</td>
+							</tr>
+						</tbody>
+					{% endfor %}
+					<tfoot class="text-right">
+						<tr class="h-12 text-dark-orange font-bold text-base">
+							<td></td>
+							<td></td>
+							<td>Total :</td>
+							<td>
+								{{ order.getTotal|number_format(2) }}
+								€</td>
+							<td></td>
+						</tr>
+					</tfoot>
+				</table>
+			{% endfor %}
+
+		</div>
+	</div>
+
+	<button id="checkout-button">Passer au paiement</button>
+{% endblock %}
+{% block javascripts %}
+	<script type="text/javascript">
+		// Create an instance of the Stripe object with your publishable API key
+var stripe = Stripe('pk_test_51IZNrML6Jn5FyECcgAllLjNGnquUU0YjUdjxOA5ep3KRF0WF4jWTWZAgdIjMoXK2fReOaLzyyWeWw3TYpW1KaQoB00bMCKRdKY');
+var checkoutButton = document.getElementById('checkout-button');
+
+checkoutButton.addEventListener('click', function () {
+// Create a new Checkout Session using the server-side endpoint you
+// created in step 3.
+fetch('/create-checkout-session', {method: 'POST'}).then(function (response) {
+return response.json();
+}).then(function (session) {
+return stripe.redirectToCheckout({sessionId: session.id});
+}).then(function (result) {
+// If `redirectToCheckout` fails due to a browser or network
+// error, you should display the localized error message to your
+// customer using `error.message`.
+if (result.error) {
+alert(result.error.message);
+}
+}).catch(function (error) {
+console.error('Error:', error);
+});
+});
+	</script>
+
+{% endblock %}

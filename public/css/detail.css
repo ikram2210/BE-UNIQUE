@@ -44,8 +44,6 @@ h3 {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  /* min-width: 255px;
-  max-width: 315px; */
   width: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }

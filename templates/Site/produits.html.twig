@@ -12,9 +12,7 @@
 		{% for produit in produits %}
 			<div class="product">
 				<a href="/produit/{{produit.id}}"><img class="image_accessoire" src="{{ asset('' ~ produit.image ~ '') }}" alt="photo_accessoire" style="width: 300px; height: 300px"/></a>
-				{# <h2>{{ produit.nom }}</h2>
-				        {{ produit.prix }} EURO #}
-			</div>
+            </div>
 
 		{% endfor %}
 

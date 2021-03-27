@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UserRepository;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -48,6 +50,18 @@ class User implements UserInterface
      */
     public $confirm_password;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Order::class, mappedBy="user")
+     */
+    private $orders;
+
+   
+
+    public function __construct()
+    {
+        $this->orders = new ArrayCollection();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -92,6 +106,36 @@ class User implements UserInterface
     public function getSalt() {}
     public function getRoles(){
        return ['ROLE_USER'] ;
+    }
+
+    /**
+     * @return Collection|Ord[]
+     */
+    public function getOrders(): Collection
+    {
+        return $this->orders;
+    }
+
+    public function addOrder(Ord $order): self
+    {
+        if (!$this->orders->contains($order)) {
+            $this->orders[] = $order;
+            $order->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOrder(Ord $order): self
+    {
+        if ($this->orders->removeElement($order)) {
+            // set the owning side to null (unless already changed)
+            if ($order->getUser() === $this) {
+                $order->setUser(null);
+            }
+        }
+
+        return $this;
     }
 
 }

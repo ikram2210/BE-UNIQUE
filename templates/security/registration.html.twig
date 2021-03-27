@@ -1,27 +1,29 @@
 {% extends 'base.html.twig' %}
+
+{% block title %}registration{% endblock %}
 {% block stylesheets %}
 	<link rel="stylesheet" href="{{ asset('css/registration.css') }}">
 {% endblock %}
 {% block body %}
-<section>
-<div class="fleche">
-		<a href="/"><img src="{{ asset('images/logos/fleche.png') }}" alt="flèche retourne à la page d'accueil" height="50" width="100"></a>
-	</div>
-	<div class="formulaire_inscription">
-		<h4>Formulaire d'inscription</h4>
-		{{ form_start(form) }}
-		{{ form_row(form.username, {'label':'Nom d\'utilisateur','attr':
-{'placeholder': 'Entrer votre nom d\'utilisateur'}}) }}
-		{{ form_row(form.email, {'label':'Adresse email','attr':
-{'placeholder': 'Entrer votre adresse email... '}}) }}
-		{{ form_row(form.password,  {'label':'Mot de passe','attr':
-{'placeholder': 'Entrer votre Mot de passe '}}) }}
-		{{ form_row(form.confirm_password, {'label':'Confirmation du mot de passe','attr':
-{'placeholder': 'Confirmer votre adresse mail '}}) }}
-        <div class="button_inscription">
-		<button type="submit" class="btn btn-success">Inscription</button>
-		{{ form_end(form) }}
+	<section>
+		<div class="fleche">
+			<a href="/"><img src="{{ asset('images/logos/fleche.png') }}" alt="flèche retourne à la page d'accueil" height="50" width="100"></a>
 		</div>
-	</div>
-</section>
+		<div class="formulaire_inscription">
+			<h4>Formulaire d'inscription</h4>
+			{{ form_start(form) }}
+			{{ form_row(form.username, {'label':'Nom d\'utilisateur','attr':
+            {'placeholder': 'Entrer votre nom d\'utilisateur'}}) }}
+			{{ form_row(form.email, {'label':'Adresse email','attr':
+            {'placeholder': 'Entrer votre adresse email... '}}) }}
+			{{ form_row(form.password,  {'label':'Mot de passe','attr':
+            {'placeholder': 'Entrer votre Mot de passe '}}) }}
+			{{ form_row(form.confirm_password, {'label':'Confirmation du mot de passe','attr':
+            {'placeholder': 'Confirmer votre adresse mail '}}) }}
+			<div class="button_inscription">
+				<button type="submit" class="btn btn-success">Inscription</button>
+				{{ form_end(form) }}
+			</div>
+		</div>
+	</section>
 {% endblock %}

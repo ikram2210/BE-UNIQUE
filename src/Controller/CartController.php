@@ -31,7 +31,7 @@ class CartController extends AbstractController
             $totalItem = $item['product']->getPrix() * $item['quantity'];
             $total += $totalItem;
         }
-        return $this->render('cart/index.html.twig', [
+        return $this->render('cart/cart.html.twig', [
             'items' => $panierWithData,
             'total' => $total,
         ]);

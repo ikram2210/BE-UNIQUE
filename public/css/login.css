@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-  .fleche{
-    margin-left: 100px;
-    margin-top: 30px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.fleche {
+  margin-left: 100px;
+  margin-top: 30px;
+}
 .page_connexion {
   font-family: Roboto;
   margin-right: auto;
@@ -11,7 +11,7 @@
   margin-bottom: 60px;
   height: 350px;
   width: 700px;
-  background-color: #C8DFD4;
+  background-color: #c8dfd4;
   border-radius: 10px;
 }
 
@@ -26,17 +26,14 @@
   height: 35px;
   color: white;
   font-size: 20px;
-  
 }
 .formulaire_connexion {
   font-family: Roboto;
 
-   width: 160px;
+  width: 160px;
   /* float: left;  */
   margin-left: auto;
   margin-right: auto;
-
-
 }
 h4 {
   font-family: Roboto;
@@ -53,47 +50,36 @@ input {
   margin-bottom: 10px;
   margin-top: 10px;
   font-size: 28px;
-  
+
   margin-left: -50%;
 }
 
-
 @media screen and (max-width: 1280px) {
-  input{
+  input {
     height: 100px;
     width: 600px;
     margin-left: -220px;
     font-size: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
-   
-}
+  }
 
-.page_connexion{
- 
-height: 1100px;
-
-}
-.btn-success {
- 
- 
-}
-h4{
-  padding-top: 200px;
-  font-size: 60px;
-  margin-left: -70px;
-
-
-}
-.btn-success {
-  
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 300px;
-  height: 80px;
-  font-size: 40px;
-  margin-left: -70px;
-  
-  
-}
+  .page_connexion {
+    height: 1100px;
+  }
+  .btn-success {
+  }
+  h4 {
+    padding-top: 200px;
+    font-size: 60px;
+    margin-left: -70px;
+  }
+  .btn-success {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    height: 80px;
+    font-size: 40px;
+    margin-left: -70px;
+  }
 }

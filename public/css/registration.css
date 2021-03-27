@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-.fleche{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.fleche {
   margin-left: 100px;
   margin-top: 30px;
 }
@@ -60,7 +60,6 @@ label {
   color: white;
   border-radius: 10px;
   margin-top: 30px;
-  /* margin-bottom: 40px; */
   width: 150px;
   height: 35px;
   font-size: 20px;
@@ -74,7 +73,6 @@ h4 {
   text-align: center;
 }
 a {
-  
   color: white;
   text-decoration: none;
 }
@@ -82,9 +80,7 @@ a:hover {
   color: white;
 }
 @media screen and (max-width: 1280px) {
-
   .formulaire_inscription {
-
     margin-bottom: 50px;
     height: 1100px;
     width: 700px;
@@ -97,53 +93,45 @@ a:hover {
     height: 50px;
     font-size: 35px;
     margin-left: 6%;
+  }
 
-  }
-  /* form{
-    margin-left: auto;
-    margin-right: auto;
-  } */
-  #registration_username{
-    width: 600px;
-    height: 80px;
-    font-size: 40px;
-    margin-left: 6%;
-    margin-bottom: 40px;
-
-  }
-  #registration_email{
+  #registration_username {
     width: 600px;
     height: 80px;
     font-size: 40px;
     margin-left: 6%;
     margin-bottom: 40px;
   }
-  #registration_password{
-    width: 600px;
-    height: 80px;
-    font-size: 40px;
-    margin-left: 6%;
-    margin-bottom: 40px;
-    
-  }
-  #registration_confirm_password{
+  #registration_email {
     width: 600px;
     height: 80px;
     font-size: 40px;
     margin-left: 6%;
     margin-bottom: 40px;
   }
-  input{
-
+  #registration_password {
+    width: 600px;
+    height: 80px;
+    font-size: 40px;
+    margin-left: 6%;
+    margin-bottom: 40px;
+  }
+  #registration_confirm_password {
+    width: 600px;
+    height: 80px;
+    font-size: 40px;
+    margin-left: 6%;
+    margin-bottom: 40px;
+  }
+  input {
     width: 700px;
   }
-  h4{
+  h4 {
     padding-top: 100px;
     margin-bottom: 80px;
     font-size: 50px;
   }
   .btn-success {
-    
     margin-top: 20px;
 
     width: 250px;
@@ -151,8 +139,5 @@ a:hover {
     font-size: 35px;
     margin-left: 30%;
     margin-right: 30%;
-    
   }
 }
-
-

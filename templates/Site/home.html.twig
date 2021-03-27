@@ -1,53 +1,45 @@
 {% extends 'base.html.twig' %}
+{% block title %}Welcome!{% endblock %}
 {% block stylesheets %}
 	<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
 {% endblock %}
 {% block body %}
-	{# <section>
-		<div id="content_category">
-			<div class="box">
-				<img class="photo" src="{{ asset('images/Sacs/Agareb.jpg') }}" alt="sac"/>
-				<a class="lien" href="/produits?category=Sacs">Sacs</a>
-			</div>
-			<div class="box">
-				<img class="photo" src="{{ asset('images/bijoux/Kafssa.jpg') }}" alt="bracelet"/>
-				<a class="lien" href="/produits?category=Bijoux">Bijoux</a>
-			</div>
-			<div class="box">
-				<img class="photo" src="{{ asset('images/lunettes/Beja.jpg') }}" alt="lunette"/>
-				<a class="lien" href="/produits?category=Lunettes">Lunettes</a>
-			</div>
-	</section> #}
+
 	<section>
-	<div id="content_category">
-	<figure class="box">
-  <img class="photo" src="{{ asset('images/Sacs/Agareb.jpg') }}" alt="image_sac" />
-  <figcaption>
-    <h3><span>Sacs</span></h3>
-  </figcaption>
-  <a href="/produits?category=Sacs"></a>
-</figure>
-<figure class="box"><img class="photo" src= "{{ asset('images/bijoux/Kafssa.jpg') }}" alt="image_bracelet" />
-  <figcaption>
-    <h3><span>Bijoux</span></h3>
-  </figcaption>
-  <a href="/produits?category=Bijoux"></a>
-</figure>
-<figure class="box"><img class="photo" src="{{ asset('images/lunettes/Beja.jpg') }}" alt="image_lunette" />
-  <figcaption>
-    <h3><span>Lunettes</span></h3>
-  </figcaption>
-  <a href="/produits?category=Lunettes"></a>
-</figure>
-</div>
-	</section>
-		<div class="bienvenue">
-			<h2>Bienvenue</h2>
-			<div id = "ligne"></div>
+		<div id="content_category">
+			<figure class="box">
+				<img class="photo" src="{{ asset('images/Sacs/Agareb.jpg') }}" alt="image_sac"/>
+				<figcaption>
+					<h3>
+						<span>Sacs</span>
+					</h3>
+				</figcaption>
+				<a href="/produits?category=Sacs"></a>
+			</figure>
+			<figure class="box"><img class="photo" src="{{ asset('images/bijoux/Kafssa.jpg') }}" alt="image_bracelet"/>
+				<figcaption>
+					<h3>
+						<span>Bijoux</span>
+					</h3>
+				</figcaption>
+				<a href="/produits?category=Bijoux"></a>
+			</figure>
+			<figure class="box"><img class="photo" src="{{ asset('images/lunettes/Beja.jpg') }}" alt="image_lunette"/>
+				<figcaption>
+					<h3>
+						<span>Lunettes</span>
+					</h3>
+				</figcaption>
+				<a href="/produits?category=Lunettes"></a>
+			</figure>
 		</div>
-		        {% block javascripts %} {% endblock %}
+	</section>
+	<div class="bienvenue">
+		<h2>Bienvenue</h2>
+	    <div id="ligne">
+		</div>
+	</div>
+	{% block javascripts %}{% endblock %}
 
-	{% endblock %}
-
-	
+{% endblock %}

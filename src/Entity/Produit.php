@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ProduitRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -47,6 +49,18 @@ class Produit
      * @ORM\Column(type="integer")
      */
     private $Stock;
+
+    /**
+     * @ORM\OneToMany(targetEntity=OrderHasProduits::class, mappedBy="produit")
+     */
+    private $hasOrder;
+    
+    
+
+    public function __construct()
+    {
+        $this->hasOrder = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -123,6 +137,36 @@ class Produit
     public function setStock(int $Stock): self
     {
         $this->Stock = $Stock;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|OrderHasProduits[]
+     */
+    public function getHasOrder(): Collection
+    {
+        return $this->hasOrder;
+    }
+
+    public function addHasOrder(OrderHasProduits $hasOrder): self
+    {
+        if (!$this->hasOrder->contains($hasOrder)) {
+            $this->hasOrder[] = $hasOrder;
+            $hasOrder->setProduit($this);
+        }
+
+        return $this;
+    }
+
+    public function removeHasOrder(OrderHasProduits $hasOrder): self
+    {
+        if ($this->hasOrder->removeElement($hasOrder)) {
+            // set the owning side to null (unless already changed)
+            if ($hasOrder->getProduit() === $this) {
+                $hasOrder->setProduit(null);
+            }
+        }
 
         return $this;
     }

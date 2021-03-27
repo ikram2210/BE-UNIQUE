@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
-
-.fleche{
+.fleche {
   margin-left: 130px;
   margin-top: 20px;
 }
@@ -14,8 +13,8 @@
   margin-bottom: 60px;
   height: auto;
 }
-.formulaire_contact{
-  margin-top:30px;
+.formulaire_contact {
+  margin-top: 30px;
 }
 
 .infos_formulaire {
@@ -25,168 +24,130 @@
   align-items: center;
   text-align: justify;
 }
-h4{
- margin-top: 30px ;
+h4 {
+  margin-top: 30px;
 
- font-size: 30px;
-text-align: center;
-font-family: Roboto;
-font-weight: bold;
-
+  font-size: 30px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
 }
 
-  .form-control{
-    width: 300px;
-  }
-  input{
-    height: 30px;
- 
+.form-control {
+  width: 300px;
+}
+input {
+  height: 30px;
+}
 
-  }
-    
-  textarea{
-    height: 100px;
-  }
-label{
-
+textarea {
+  height: 100px;
+}
+label {
   display: block;
-   font-size: 20px ;
-   font-family: Roboto;
-
+  font-size: 20px;
+  font-family: Roboto;
 }
-/* .btn{
-  width: 160px;
-  border-radius: 10px;
-  
-} */
 
-.button_envoyer{
+.button_envoyer {
   text-align: center;
 }
-.btn-info{
+.btn-info {
   margin-top: 30px;
   font-size: 18px;
   font-weight: bold;
-  background-color: #0DCAF0;
-  border-color: #0DCAF0;
-  font-family: Roboto;
-
-}
-
-
-p{
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
   font-family: Roboto;
 }
-h5{
+
+p {
+  font-family: Roboto;
+}
+h5 {
   font-family: Roboto;
   letter-spacing: 1px;
-  background: linear-gradient( #000, #000);
+  background: linear-gradient(#000, #000);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 7s infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  }
-  @keyframes animate {
+}
+@keyframes animate {
   0% {
-  background-position: -500%;
+    background-position: -500%;
   }
   100% {
-  background-position: 500%;
+    background-position: 500%;
   }
-  }
-
-.formulaire_contact {
 }
-.signature{
 
+.signature {
   text-align: center;
 }
 
-
 @media screen and (max-width: 1280px) {
-  .fleche{
+  .fleche {
     margin-top: 60px;
     margin-left: 180px;
   }
-   h4{
-     font-size: 40px;
-
-   }
-  .conteneur_contact{
+  h4 {
+    font-size: 40px;
+  }
+  .conteneur_contact {
     flex-direction: column;
     height: auto;
     margin-right: auto;
-    margin-left:auto;
- 
+    margin-left: auto;
   }
 
- .form-control{
-   width: 600px;
-   font-size: 25px;
-   border-color: #848080;
-}
-  
-
-  .d-block{
-
+  .form-control {
+    width: 600px;
+    font-size: 25px;
+    border-color: #848080;
   }
-  .form-group {
-/* 
-  height: 80px; */
-  
-  }
-  input{
+
+  input {
     height: 60px;
     font-size: 25;
-    
-
   }
-  textarea{
+  textarea {
     height: 150px;
     border-color: #848080;
   }
-  
-  /* #contact-form{
-    
-    height: auto;
 
-  }  */
-  .infos_formulaire{
-  width: 600px;
-  height: auto;
-  margin-right: auto;
-  margin-left:auto;
-  margin-top: 50px;
+  .infos_formulaire {
+    width: 600px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
   }
-  .btn{
+  .btn {
     width: 250px;
     border-radius: 10px;
-    
-
   }
-  .btn-info{
+  .btn-info {
     margin-top: 50px;
     font-size: 35px;
     font-weight: bold;
   }
-  label{
+  label {
     font-size: 20px;
     height: 40px;
-    margin: 5px
-    
+    margin: 5px;
   }
-  
-  .a_bientot{
+
+  .a_bientot {
     margin-top: 30px;
     height: 300px;
     width: 300px;
   }
-  h6{
+  h6 {
     font-size: 15px;
   }
-  p{
+  p {
     font-size: 20px;
   }
-
 }

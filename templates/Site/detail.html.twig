@@ -6,54 +6,34 @@
 {% endblock %}
 
 {% block body %}
-{# <section>
-	<div class="produits-details">
-		<div class="la-photo">
 
-			<img class="image-details" src="{{ asset('' ~ Produit.image ~ '') }}" alt="image_produit">
+	<section>
+		<div class="fleche">
+			<a href="/"><img src="{{ asset('images/logos/fleche.png') }}" alt="flèche retourne à la page d'accueil" height="50" width="100"></a>
 		</div>
-		<div class="detail_article">
-			<h2>{{ Produit.nom}}</h2>
-			<h3>Détails du produit</h3>
-			<p>{{Produit.descriptif}}</p>
-			<p class="prix">Prix:{{ Produit.prix}}€</p>
+		<div class="produits-details">
+			<figure class="la-photo">
+				<img class="image-details" src="{{ asset('' ~ Produit.image ~ '') }}" alt="image_produit">
+			</figure>
+			<div class="detail_article">
+				<h2>{{ Produit.nom}}</h2>
+				<h3>Détails du produit</h3>
+				<p>{{Produit.descriptif}}</p>
+				<p class="prix">Prix:{{ Produit.prix}}€</p>
 
-			<a href="{{ path('cart_add' , {'id' : Produit.id}) }}">
-				<input class="bouttonpanier" type="submit" value="AJOUTER AU PANIER"></a>
+				<a href="{{ path('cart_add' , {'id' : Produit.id}) }}">
+					<input class="bouttonpanier" type="submit" value="AJOUTER AU PANIER"></a>
 
-			<h3>Retours et Échanges</h3>
-			<p>Livraison en 3-5 jours ouvrables</p>
-		<p>LIVRAISON À DOMICILE: 4,99 EUR</p>
-	<P>Livraison gratuite pour toute commande supérieure à 50 EUR</p>
-<p>RETOURS :</p>Vous disposez de 30 jours à partir de la date d’achat</p><p>Pour plus de renseignements veuillez consulter notre politique d’échanges et retours</p></div></div>
-</section> #}
-<section>
-<div class="fleche">
-		<a href="/"><img src="{{ asset('images/logos/fleche.png') }}" alt="flèche retourne à la page d'accueil" height="50" width="100"></a>
-	</div>
-<div class="produits-details">
-<figure class="la-photo">
-<img class="image-details" src="{{ asset('' ~ Produit.image ~ '') }}" alt="image_produit">
-</figure>
-<div class="detail_article">
-			<h2>{{ Produit.nom}}</h2>
-			<h3>Détails du produit</h3>
-			<p>{{Produit.descriptif}}</p>
-			<p class="prix">Prix:{{ Produit.prix}}€</p>
+				<h3>Retours et Échanges</h3>
+				<p>Livraison en 3-5 jours ouvrables</p>
+				<p>Livraison à domicle : 4,99 EUR</p>
+				<P>Livraison gratuite pour toute commande supérieure à 50€</p>
+				<p>RETOURS :</p>Vous disposez de 30 jours à partir de la date d’achat</p>
+			    <p>Pour plus de renseignements veuillez consulter notre politique d’échanges et retours</p>
+		    </div>
+	        </div>
 
-			<a href="{{ path('cart_add' , {'id' : Produit.id}) }}">
-				<input class="bouttonpanier" type="submit" value="AJOUTER AU PANIER"></a>
-
-			<h3>Retours et Échanges</h3>
-			<p>Livraison en 3-5 jours ouvrables</p>
-		<p>Livraison à domicle : 4,99 EUR</p>
-	<P>Livraison gratuite pour toute commande supérieure à 50€</p>
-<p>RETOURS :</p>Vous disposez de 30 jours à partir de la date d’achat</p><p>Pour plus de renseignements veuillez consulter notre politique d’échanges et retours</p></div></div>
-
-</section>
-
-{% endblock %}
-{% block javascripts %}
+    </section>
+{% endblock %}{% block javascripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="{{ asset('js/detail.js') }}"></script>
-{% endblock %}
+<script src="{{ asset('js/detail.js') }}"></script>{% endblock %}
