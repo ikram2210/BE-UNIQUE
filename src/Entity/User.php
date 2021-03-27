@@ -109,14 +109,14 @@ class User implements UserInterface
     }
 
     /**
-     * @return Collection|Ord[]
+     * @return Collection|Order[]
      */
     public function getOrders(): Collection
     {
         return $this->orders;
     }
 
-    public function addOrder(Ord $order): self
+    public function addOrder(Order $order): self
     {
         if (!$this->orders->contains($order)) {
             $this->orders[] = $order;
@@ -126,7 +126,7 @@ class User implements UserInterface
         return $this;
     }
 
-    public function removeOrder(Ord $order): self
+    public function removeOrder(Order $order): self
     {
         if ($this->orders->removeElement($order)) {
             // set the owning side to null (unless already changed)
